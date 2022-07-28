@@ -1,0 +1,5 @@
+cc -I/usr/lib/jvm/java-18-openjdk-amd64/include \
+   -I/usr/lib/jvm/java-18-openjdk-amd64/include/linux \
+   -shared -o total.so total.c
+   
+javac -classpath ".:/root/tomcat/lib/*" NativeServlet.java
